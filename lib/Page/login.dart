@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/Routes.dart';
 
 
 void main(){
@@ -51,7 +52,7 @@ class Login extends StatelessWidget {
                 SizedBox(height: 15,),
                 ElevatedButton(
                     onPressed: (){
-                      print("Hello Roopam I am a login button");
+                      Navigator.pushNamed(context, MyRoutes.Home);
                     },
                     child: Text("Login"),
                   style: ElevatedButton.styleFrom(
