@@ -18,7 +18,6 @@ class Home extends StatelessWidget {
           child: Text("Roopam Rahangdale"),
         ),
       ),
-      drawer: Drawer(),
     );
   }
 }
