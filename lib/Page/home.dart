@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Drawer.dart';
 
 void main(){
   runApp(Home());
@@ -18,6 +19,7 @@ class Home extends StatelessWidget {
           child: Text("Roopam Rahangdale"),
         ),
       ),
+      drawer: MyDrawer(),
     );
   }
 }
