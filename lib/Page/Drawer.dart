@@ -9,34 +9,35 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Colors.indigo,
+        color: Colors.white,
         child: ListView(
           children:  [
             DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
-                  accountName: const Text("Roopam"),
-                  accountEmail: const Text("roopamr2411@gmail.com"),
+                  accountName: const Text("Roopam",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                  accountEmail: const Text("roopamr2411@gmail.com",style: TextStyle(color: Colors.black),),
+                decoration: BoxDecoration(color: Colors.white),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(imageUrl),
                 ),
               ),
             ),
             const ListTile(
-              leading: Icon(CupertinoIcons.home, color: Colors.white,),
-              title: Text("Home",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
+              leading: Icon(CupertinoIcons.home, color: Colors.black,),
+              title: Text("Home",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
             ),
             const ListTile(
-              leading: Icon(CupertinoIcons.profile_circled,color: Colors.white,),
-              title: Text('Profile',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
+              leading: Icon(CupertinoIcons.profile_circled,color: Colors.black,),
+              title: Text('Profile',style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
             ),
             const ListTile(
-              leading: Icon(CupertinoIcons.mail,color: Colors.white,),
-              title: Text('Email',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
+              leading: Icon(CupertinoIcons.mail,color: Colors.black,),
+              title: Text('Email',style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
             ),
             const ListTile(
-              leading: Icon(CupertinoIcons.location,color: Colors.white,),
-              title: Text('Location',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),),
+              leading: Icon(CupertinoIcons.location,color: Colors.black,),
+              title: Text('Location',style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
             )
           ],
         ),
